@@ -6,18 +6,6 @@ Shared SparkSession builder.
 
 from pyspark.sql import SparkSession
 
-# PySpark 3.5.x needs `distutils` (removed from stdlib in Python 3.12+);
-# PySpark 4.0+ doesn't. See README if this raises on your setup.
-try:
-    import distutils  # noqa: F401
-except ModuleNotFoundError:
-    import pyspark
-    if int(pyspark.__version__.split(".")[0]) < 4:
-        raise ModuleNotFoundError(
-            "distutils is required for PySpark 3.5.x on Python 3.12+. Run: "
-            "pip install standard-distutils"
-        )
-
 
 def get_spark(app_name: str = "bnpl-industry-project",
                driver_memory: str = "6g",
