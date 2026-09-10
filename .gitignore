@@ -139,5 +139,8 @@ data/*.zip
 scripts/__pycache__/
 scripts/__pycache__/*.pyc
 
+# old code
+deprecate/
+
 # OSX .DS_Store file
 .DS_Store
