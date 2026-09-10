@@ -132,9 +132,6 @@ dmypy.json
 data/curated/
 data/landing/
 data/tables/
-<<<<<<< HEAD
-data/landing/
-=======
 data/transactions/
 data/raw/
 data/*.zip
@@ -144,7 +141,6 @@ scripts/__pycache__/*.pyc
 
 # old code
 deprecate/
->>>>>>> 636f53e3edb01b283da5471317a93a1602032cdf
 
 # OSX .DS_Store file
 .DS_Store
